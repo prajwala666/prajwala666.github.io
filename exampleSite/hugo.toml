@@ -3,9 +3,6 @@ canonifyURLs = true
 languageCode = "en" # <html lang> ==> data/l10n.toml
 title = "Example Site" # Website Title
 copyright = "Name" # Footer copyright.
-[module]
-  [[module.imports]]
-    path = "../"    # 直接把上一级目录（你的仓库根）当作本地模块导入
 pagination.pagerSize = 9
 hasCJKLanguage = true
 enableEmoji = true
@@ -47,7 +44,10 @@ disableKinds = ["taxonomy","term"] # DO NOT MODIFY
     url = "/posts"
     weight = 3
 
+# 只保留一个 [module]，把 imports 和 hugoVersion 都放到这个表里
 [module]
+    [[module.imports]]
+        path = "../"     # 使用父目录（仓库根）作为本地模块/主题
     [module.hugoVersion]
         extended = true
         min = "0.116.0"
