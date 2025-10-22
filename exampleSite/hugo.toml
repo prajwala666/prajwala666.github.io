@@ -4,6 +4,7 @@ languageCode = "en" # <html lang> ==> data/l10n.toml
 title = "Example Site" # Website Title
 copyright = "Name" # Footer copyright.
 theme = "vortisil"
+themesDir = ".."  # <-- 新增：告诉 Hugo 主题目录在上一级（仓库根）
 pagination.pagerSize = 9
 hasCJKLanguage = true
 enableEmoji = true
