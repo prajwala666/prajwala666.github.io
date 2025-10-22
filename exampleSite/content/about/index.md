@@ -1,10 +1,17 @@
 +++
-layout= "about"
+layout = "about"
+title  = "About — Yixuan Chen"
 +++
 
-Hi, this is Vortisil. A fast, minimal and restrained Hugo theme.
+Hi, I'm **Yixuan Chen**, a senior undergraduate (Year 4).
+My research interests include **Large Language Models (LLMs)**,
+**Continual Learning**, and **Reinforcement Learning**.
 
-### Social Links
+### Research Interests
+- Large Language Models (LLMs)
+- Continual Learning (CL)
+- Reinforcement Learning (RL)
 
-- [Github](https://github.com/khitezza/vortisil)
-- [Demo Site](https://khitezza.com)
+### Currently
+- Senior undergraduate (BSc, Year 4)
+- Building small research prototypes and open-source repos

@@ -1,4 +1,5 @@
-baseURL = "https://example.com"
+baseURL = "https://prajwala666.github.io/"
+canonifyURLs = true
 languageCode = "en" # <html lang> ==> data/l10n.toml
 title = "Example Site" # Website Title
 copyright = "Name" # Footer copyright.
