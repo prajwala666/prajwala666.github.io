@@ -3,7 +3,7 @@ canonifyURLs = true
 languageCode = "en" # <html lang> ==> data/l10n.toml
 title = "Example Site" # Website Title
 copyright = "Name" # Footer copyright.
-theme = "vortisil"
+theme = "prajwala666.github.io" # 改成仓库根目录的名字（父目录名）
 themesDir = ".."  # <-- 新增：告诉 Hugo 主题目录在上一级（仓库根）
 pagination.pagerSize = 9
 hasCJKLanguage = true
