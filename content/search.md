@@ -3,7 +3,7 @@ layout = "about"
 title  = "About — Yixuan Chen"
 +++
 
-Hi, I'm **Yixuan Chen** (陈奕轩), a senior undergraduate (Year 4).
+Hi, I'm **Yixuan Chen**, a senior undergraduate (Year 4).
 My research interests include **Large Language Models (LLMs)**,
 **Continual Learning**, and **Reinforcement Learning**.
 
