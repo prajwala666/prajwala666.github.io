@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: [ "trunk" ]   
+    branches: [ "trunk" ]
   workflow_dispatch:
 
 permissions:
@@ -30,13 +30,24 @@ jobs:
           hugo-version: '0.134.3'
           extended: true
 
+      # 关键：把仓库根当作主题复制到 exampleSite/themes/local
+      - name: Prepare theme
+        run: |
+          rm -rf exampleSite/themes/local
+          mkdir -p exampleSite/themes/local
+          rsync -a --delete \
+            --exclude 'exampleSite' \
+            --exclude '.git' \
+            --exclude '.github' \
+            ./ exampleSite/themes/local/
+
       - name: Build
-        run: hugo --minify -s exampleSite   # 关键：站点根是 exampleSite
+        run: hugo --minify -s exampleSite
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: exampleSite/public          # 关键：上传 exampleSite/public
+          path: exampleSite/public
 
   deploy:
     needs: build
